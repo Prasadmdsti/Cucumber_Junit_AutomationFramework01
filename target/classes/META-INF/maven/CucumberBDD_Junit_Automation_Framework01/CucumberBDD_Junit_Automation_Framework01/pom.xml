@@ -1,0 +1,178 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>CucumberBDD_Junit_Automation_Framework01</groupId>
+  <artifactId>CucumberBDD_Junit_Automation_Framework01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+ <!-- below maven-compiler-plugin is responsible for running the test from pom.xml-->  
+  <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+<build>
+	<plugins>
+	<plugin>	
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.8.1</version>
+    <configuration>
+		<source>1.8</source>
+		<target>1.8</target>
+		<encoding>UTF-8</encoding>
+	</configuration>
+    </plugin>
+  </plugins>
+</build>
+  
+    
+  <dependencies>
+
+                                   <!-- for Cucumber_Core-->
+                    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+                   <dependency>
+                        <groupId>io.cucumber</groupId>
+                        <artifactId>cucumber-core</artifactId>
+                        <version>7.20.1</version>
+                    </dependency> 
+
+
+                                      <!-- for Cucumber_html-->
+                    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
+                    <dependency>
+                        <groupId>io.cucumber</groupId>
+                        <artifactId>cucumber-html</artifactId>
+                        <version>0.2.7</version>
+                    </dependency> 
+
+
+                                            <!-- for Cobertura-->
+                        <!-- https://mvnrepository.com/artifact/net.sourceforge.cobertura/cobertura -->
+                        <dependency>
+                            <groupId>net.sourceforge.cobertura</groupId>
+                            <artifactId>cobertura</artifactId>
+                            <version>2.1.1</version>
+                            <scope>test</scope>
+                        </dependency> 
+
+
+                                           <!-- for Cucumber_java-->
+                        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+                        <dependency>
+                            <groupId>io.cucumber</groupId>
+                            <artifactId>cucumber-java</artifactId>
+                            <version>7.20.1</version>
+                        </dependency>
+
+                                           <!-- for Cucumber_junit-->
+                        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+                        <dependency>
+                            <groupId>io.cucumber</groupId>
+                            <artifactId>cucumber-junit</artifactId>
+                            <version>7.20.1</version>
+                            <scope>test</scope>
+                        </dependency>
+
+                                          <!-- for Cucumber JVM Repackaged Dependencies-->
+                        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
+                        <dependency>
+                            <groupId>io.cucumber</groupId>
+                            <artifactId>cucumber-jvm-deps</artifactId>
+                            <version>1.0.6</version>
+                            <scope>provided</scope>
+                        </dependency> 
+
+
+                                        <!-- for Cucumber Reporting-->
+                        <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
+                      <dependency>
+                            <groupId>net.masterthought</groupId>
+                            <artifactId>cucumber-reporting</artifactId>
+                            <version>5.8.4</version>
+                        </dependency>
+
+
+
+                                           <!-- for Hamcrest Core-->
+                        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core -->
+                        <dependency>
+                            <groupId>org.hamcrest</groupId>
+                            <artifactId>hamcrest-core</artifactId>
+                            <version>3.0</version>
+                            <scope>test</scope>
+                        </dependency>
+
+
+                                            <!-- for Gherkin » 5.1.0 (only this version)-->
+          
+                    <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+						<dependency>
+						    <groupId>io.cucumber</groupId>
+						    <artifactId>gherkin</artifactId>
+						    <version>28.0.0</version>
+						</dependency>
+
+
+
+                                             <!-- for Selenium Java-->
+                        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+                       <dependency>
+                            <groupId>org.seleniumhq.selenium</groupId>
+                            <artifactId>selenium-java</artifactId>
+                            <version>4.26.0</version>
+                        </dependency>
+                        
+                        
+                        
+                        
+                         <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-core</artifactId>
+		    <version>2.20.0</version>
+		</dependency>
+		
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+		    <groupId>org.apache.logging.log4j</groupId>
+		    <artifactId>log4j-api</artifactId>
+		    <version>2.20.0</version>
+		</dependency>
+		
+		
+		<dependency>
+						    <groupId>org.apache.logging.log4j</groupId>
+						    <artifactId>log4j-slf4j-impl</artifactId>
+						    <version>2.23.1</version>
+						    <scope>test</scope>
+						</dependency>
+
+
+                                 <!-- for log4j to generate logs-->
+					 <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+					     <!--   <dependency>
+					            <groupId>log4j</groupId>
+					            <artifactId>log4j</artifactId>
+					            <version>1.2.17</version>
+					        </dependency> -->
+
+
+                                       <!-- for JUnit-->
+                        <!-- https://mvnrepository.com/artifact/junit/junit -->
+                       <dependency>
+                            <groupId>junit</groupId>
+                            <artifactId>junit</artifactId>
+                            <version>4.13.2</version>
+                            <scope>test</scope>
+                        </dependency>
+
+                                       <!-- add tools.jar from jDK lib folder-->
+                        <dependency>
+                            <groupId>com.sun</groupId>
+                            <artifactId>tools</artifactId>
+                            <version>1.7</version>
+                            <scope>system</scope>
+                            <systemPath>C:\Program Files\Java\jdk-21\lib\tools.jar</systemPath>
+                        </dependency>
+
+    </dependencies>
+ 
+</project>

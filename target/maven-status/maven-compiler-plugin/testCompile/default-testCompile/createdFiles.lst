@@ -1,0 +1,7 @@
+pageObjects\LoginPage.class
+testRunner\TestRun.class
+pageObjects\ClickOnDog.class
+stepDefinitions\BaseClass.class
+stepDefinitions\Steps.class
+pageObjects\CreateNewAccount.class
+pageObjects\ClickonFish.class
